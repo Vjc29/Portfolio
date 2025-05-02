@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css?v=1" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Jayanth Valeti</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a onclick="window.location.href='pages/experience.html'">Experience</a></li>
+          <!-- <li><a href="#research-papers">Research Papers</a></li> Updated Link -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+    <nav id="hamburger-nav">
+      <div class="logo">Jayanth Valeti</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a onclick="window.location.href='pages/experience.html'">Experience</a></li>
+          <!-- <li><a href="#research-papers" onclick="toggleMenu()">Research Papers</a></li> Updated Link -->
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    
+
+
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="assets/profile-photo.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jayanth Chowdary Valeti</h1>
+        <p class="section__text__p2">MS (Computer Science)</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('assets/jayanth.pdf')"
+          >
+            Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='index.html#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/jayanth29v/'"
+          />
+          <img
+            src="assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Vjc29'"
+          />
+        </div>
+      </div>
+    </section>
+
+
+     <section id="about">
+      <h1 class="title">About Me</h1>
+      <div class="about-container-centered">
+        <div class="about-tile education-tile">
+          <h3>🎓 Academic Background</h3>
+          <p>Master's in Computer Science with strong emphasis on Cloud Computing, AI, and Machine Learning.</p>
+          <button class="btn btn-color-1" onclick="window.location.href='pages/education.html'">See More</button>
+        </div>
+      </div>
+    
+      <div class="professional-summary">
+        <p>With over three years of hands-on experience in software development, I specialize in building scalable backend systems, microservices, and cloud automation solutions. My expertise spans across Java, Spring Boot, Kafka, Docker, and Kubernetes, with a strong focus on AI-powered technologies and automation.</p>
+        <p>Throughout my career, I've contributed to high-performance applications at Walmart and American Express, utilizing modern tools and methodologies to optimize system performance and ensure reliability. Additionally, my experience in multi-cloud environments and AI-driven solutions has equipped me to solve complex challenges and enhance operational efficiency. I am passionate about continuous learning, problem-solving, and creating impactful solutions in the software engineering and AI spaces.</p>
+      </div>
+
+    
+    <section id="skills">
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+  
+          <!-- Machine Learning Skills -->
+          <div class="skill-category">
+              <h2 class="experience-sub-title">Machine Learning & AI</h2>
+              <div class="skill-items">
+                  <article class="skill-tile">Supervised Learning</article>
+                  <article class="skill-tile">UnSupervised Learnin</article>
+                  <article class="skill-tile">Reinforcement Learning</article>
+                  <article class="skill-tile">scikit-learn</article>
+                  <article class="skill-tile">PyTorch</article>
+                  
+              </div>
+          </div>
+  
+          <!-- Software Skills -->
+          <div class="skill-category">
+              <h2 class="experience-sub-title">Programming </h2>
+              <div class="skill-items">
+                <article class="skill-tile">Java</article>
+                  <article class="skill-tile">Python</article>
+                  <article class="skill-tile">C</article>
+                  <article class="skill-tile">JavaScript</article>
+                  <article class="skill-tile">HTML</article>
+                  <article class="skill-tile">CSS</article>
+
+              </div>
+          </div>
+
+          <div class="skill-category">
+            <h2 class="experience-sub-title">Frameworks </h2>
+            <div class="skill-items">
+              <article class="skill-tile">Angular</article>
+                <article class="skill-tile">React.js</article>
+                <article class="skill-tile">Spring</article>
+                <article class="skill-tile">SpringBoot</article>
+                <article class="skill-tile">Node.js</article>
+                <article class="skill-tile">Bootstrap</article>
+            </div>
+        </div>
+  
+          <!-- Tools & Soft Skills -->
+          <div class="skill-category">
+            <h2 class="experience-sub-title">Tools & Soft Skills</h2>
+            <div class="skill-items">
+                <article class="skill-tile">Git & GitHub</article>
+                <article class="skill-tile">Docker</article>
+                <article class="skill-tile">Kubernetes</article>
+                <article class="skill-tile">Jenkins</article>
+                <article class="skill-tile">Maven</article>
+                <article class="skill-tile">Gradle</article>
+                <article class="skill-tile">Confluence</article>
+                <article class="skill-tile">Team Collaboration</article>
+                <article class="skill-tile">Problem-Solving</article>
+                <article class="skill-tile">Communication</article>
+            </div>
+        </div>
+  
+      </div>
+  </section>
+
+    
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:valetijayanth7@gmail.com">valetijayanth7@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/jayanth29v/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#research-papers">Research Papers</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Jayanth Valeti. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
